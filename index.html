@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene id = "scene1">
+      <button onclick = "switchScene()" style = "position: absolute; z-index: 1"> Switch Scene</button>
+
+      <a-sphere id = "sun" position="0 3 -5" radius="1.25" color="yellow"></a-sphere>
+
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="10" height="10" color="#7BC8A4"></a-plane>
+      <a-sky color="blue"></a-sky>
+    </a-scene>
+
+    <a-scene id = "scene2" style = "display:none">
+
+      <button onclick = "switchScene()" style = "position: absolute; z-index: 1"> Switch Scene</button>
+      <a-sky src = "360image.jpg" rotation = "0 -130 0"></a-sky>
+      
+    </a-scene>
+
+
+      <script src = "script.js"> </script>
+  </body>
+</html>
